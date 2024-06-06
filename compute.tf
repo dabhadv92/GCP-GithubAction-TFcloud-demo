@@ -1,6 +1,7 @@
 resource "google_compute_instance" "github-action-tfcloud-vm-demo" {
-    name = var.vm-name
-    #name = "vm-${count.index}"
+    count = 2
+    #name = var.vm-name
+    name = "vm-${count.index}"
     machine_type = "e2-standard-4"
     allow_stopping_for_update = true
 
