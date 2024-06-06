@@ -7,14 +7,14 @@ terraform {
         source = "hashicorp/google"
     }
   }
-  
+  /*
   cloud {
     organization = "BDX"
     workspaces {
       name = "GCP-GithubAction-TFcloud-demo"
     }
   }
-  
+  */
   
 }
 
