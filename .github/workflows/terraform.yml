@@ -1,5 +1,6 @@
 
-name: 'Terraform_Apply'
+#name: 'Terraform_Apply'
+name: 'Terraform_Destroy'
 
 on:
   push:
@@ -36,13 +37,13 @@ jobs:
       run: terraform init
 
     # Checks that all Terraform configuration files adhere to a canonical format
-    - name: Terraform Format
-      run: terraform fmt
+    #- name: Terraform Format
+    #  run: terraform fmt
 
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
-      run: terraform plan
+      run: terraform plan -destroy
       
 
       # On push to "main", build or change infrastructure according to Terraform configuration files
