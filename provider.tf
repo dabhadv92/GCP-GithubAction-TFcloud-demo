@@ -8,14 +8,13 @@ terraform {
     }
   }
   
-  /*
   cloud {
     organization = "BDX"
     workspaces {
       name = "GCP-GithubAction-TFcloud-demo"
     }
   }
-  */
+  
   
 }
 
