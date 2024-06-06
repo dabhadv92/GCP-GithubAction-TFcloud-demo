@@ -16,7 +16,9 @@ variable "ip_cidr_range" {
   default = "192.168.140.0/24"
 }
 
+/*
 variable "vm-name" {
   type = string
   #default = "github-action-tfcloud"
 }
+*/
