@@ -1,6 +1,6 @@
 
 
-
+/*
 variable "vpc-name" {
   type = string
   default = "vpc-tfcloud-pipeline"
@@ -17,3 +17,4 @@ variable "ip_cidr_range" {
 }
 
 
+*/
